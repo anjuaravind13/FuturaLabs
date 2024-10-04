@@ -1,0 +1,138 @@
+@media (min-width:800px) {
+    body {
+        background-color: var(--body-white-color);
+        color: black;
+
+    }
+
+    /* Navbar */
+    .navbar1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+
+    /* Top Section */
+    .placed-students {
+
+        justify-content: end;
+    }
+
+    .topSection {
+        display: flex;
+        justify-content: space-between;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .section1 {
+        flex: 1;
+    }
+
+    .section1 h1 {
+        font-size: 70px;
+    }
+
+    .btn-container {
+
+        justify-content: left;
+
+    }
+
+
+    .section2 {
+        flex: 1;
+    }
+
+    .section2>img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+
+    .assured-placements>img {
+        width: 25%;
+        height: 25%;
+
+    }
+
+    .btn1,
+    .btn2 {
+
+        font-size: 20px;
+        font-weight: bold;
+        padding: 30px 10px;
+    }
+
+    /* Our Courses */
+
+    .courseCover {
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        min-height: 160px;
+    }
+
+    .courseCover img {
+        width: 65%;
+        object-fit: contain;
+        margin: 13px 0 10px;
+        padding: 0;
+        max-height: 55%;
+
+    }
+
+    /* about us */
+    .aboutUs {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 4rem;
+    }
+
+    .aboutUs-1,
+    .aboutUs-2,
+    .aboutUs-3 {
+        flex: 1;
+    }
+
+    /* footer */
+
+    .fEml,
+    .fPh,
+    .fAddr {
+        background-position: top left;
+        padding: 0 0 0 45px;
+        margin-bottom: 20px;
+        text-align: start;
+    }
+
+    .t2 {
+        border-bottom: none;
+    }
+
+    .ftrBottom-Quicklinks,
+    .ftrBottom-Courses,
+    .ftrBottom-Socials {
+        text-align: start;
+    }
+
+    .ftrBottom-Courses-list {
+        column-count: 3;
+        column-width: auto;
+        text-align: start;
+    }
+
+    .ftrBottom-Quicklinks-list {
+        column-count: 2;
+        column-width: auto;
+        text-align: start;
+    }
+
+    .ftrBottom-Socials-list {
+        text-align: start;
+        /* padding-bottom:10px; */
+    }
+}

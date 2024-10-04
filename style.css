@@ -1,0 +1,1105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+:root {
+    --bg-purple-color: rgb(42, 7, 47);
+    --body-white-color: white;
+    /* --body-white-color: #f4f4f4; */
+    /* --text-column-color:linear-gradient(#562B80 ); */
+    --h1-color-purple-font: #562b80;
+    --h1-text-transform: capitalize;
+    --h1-font-size: 35px;
+    --h1-margin-bottom: 20px;
+    --p-color: #5e5e5e;
+    --li-color: white;
+    --theme-font: 'Sora', sans-serif;
+
+}
+
+body {
+    background-color: var(--body-white-color);
+    color: black;
+}
+
+/* Navbar */
+
+.navbar1 {
+
+    align-items: center;
+    background-color: rgb(64, 27, 101);
+    padding: 20px;
+
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* futura logo */
+.futura {
+    height: 50px;
+}
+
+.futura:hover {
+    box-shadow: 5px 5px 5px 12px white;
+}
+
+.menu {
+
+    display: flex;
+
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+
+
+}
+
+.menu .list li {
+    padding-top: 5%;
+    /* margin: 0 15px; */
+}
+
+.menu .list li a {
+    color: #fff;
+    text-decoration: none;
+    /* font-weight: bold; */
+
+}
+
+.menu .list li a:hover {
+    color: #ffcc00;
+}
+
+.section-one-container {
+    background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/bg01.svg'),
+        linear-gradient(45deg, var(--bg-purple-color), rgb(102, 64, 116));
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.topSection {
+
+
+    padding: 50px;
+    padding-top: 0;
+    /* background-color: rgb(86, 43, 128); */
+
+
+}
+
+.section1 {
+    margin: 10px 10px 20px 20px;
+}
+
+.section1 h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #f4d908;
+    text-align: center;
+}
+
+
+
+.section1 h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.section2 {
+    flex: 1;
+    /* border: 1px solid;
+    border-color: black; */
+
+}
+
+
+.section2 img {
+
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.5s;
+
+}
+
+.section img:hover {}
+
+.placed-students {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.placed-students-img {
+
+    animation: zoomInOut 4s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.1)
+    }
+}
+
+
+
+.assured-placements>img {
+
+    width: 68px;
+    height: 68px;
+    box-sizing: border-box;
+
+    transform-origin: center;
+    animation: rotation 4s infinite linear;
+    /* transition: all 0.5s; */
+
+    position: relative;
+    left: 11rem;
+    bottom: 5rem;
+
+}
+
+
+
+@keyframes rotation {
+    0% {
+        transform: translateX(-50%) rotate(0deg)
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.assured-placements-img:hover {
+    /* transform: rotate(45deg); */
+
+
+}
+
+button {
+    margin-top: 20px;
+    border-style: solid;
+
+}
+
+.btn-container {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn1,
+.btn2 {
+
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    /* font-size: 18px; */
+    /* font-weight: bold; */
+    margin: 10px;
+
+
+}
+
+.btn1 {
+    background-color: #0044cc;
+    color: #fff;
+}
+
+.btn1:hover {
+    background-color: #0033aa;
+    transform: scale(1.05);
+}
+
+.btn2 {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+.btn2:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Our courses*/
+.container1 {}
+
+.titleOurCourse {
+    max-width: 100%;
+    text-align: center;
+}
+
+.titleOurCourse label {
+    font-size: 16px;
+}
+
+.titleOurCourse h1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--h1-margin-bottom);
+    text-transform: var(--h1-text-transform);
+    color: var(--h1-color-purple-font);
+
+}
+
+.titleOurCourse p {
+    margin-bottom: 20px;
+    color: var(--p-color);
+}
+
+.innerCourseTab {}
+
+.nav-tabs {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+
+}
+
+ul {}
+
+.nav-item {}
+
+.nav-button-active {
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #411b66;
+    border-radius: 16px;
+
+    margin: 0px 2px;
+    cursor: pointer;
+    color: white;
+    background-color: #411b66;
+}
+
+.nav-button {
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #411b66;
+    border-radius: 16px;
+    background-color: white;
+    margin: 0px 2px;
+    cursor: pointer;
+    color: #411b66;
+
+
+}
+
+.tabContent {}
+
+.tab-panel {}
+
+.tab-row {
+    /* display: flex;
+    justify-content: center; */
+    
+    flex: 1;
+    /* flex-wrap: wrap; */
+
+}
+
+
+.tab-row a {
+    text-decoration: none;
+    
+
+}
+.tab-column{
+    border: 1px solid;
+}
+
+.courseCover {
+
+    display: block;
+    padding: 10px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 24px;
+    transition: all 0.5s;
+    max-width: 100%;
+    margin-bottom: 15px;
+
+
+}
+
+.courseCover>img {
+    width: 184px;
+    height: 55px;
+    margin: 13px 0 10px;
+    object-fit: contain;
+    padding: 0;
+    /* border: 1px solid; */
+    margin-left: 30%;
+
+}
+
+
+
+.courseHead {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #562b80;
+    font-family: var(--theme-font);
+    font-weight: bold;
+    /* border: 1px solid; */
+
+}
+
+
+/* About US  */
+
+
+.aboutUs {
+    background-color: #f7f1ff;
+   
+}
+
+.aboutUs-1 {
+    padding: 50px 0;
+    max-width: 100%;
+    text-align: center;
+}
+
+.aboutUs-1 label {
+    font-size: 16px;
+}
+
+.aboutUs-1 h1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--h1-margin-bottom);
+    text-transform: var(--h1-text-transform);
+    color: var(--h1-color-purple-font);
+
+}
+
+.aboutUs-1 p {
+    margin-bottom: 20px;
+    color: var(--p-color);
+}
+
+.btn-know-more {
+    font-size: 16px;
+    border: 1px solid #562b80;
+    border-radius: 16px;
+    padding: 10px 40px 10px 20px;
+    color: #562b80;
+    text-align: center;
+    text-decoration: none;
+
+    background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/arrow-blue.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
+
+}
+
+.aboutImg {
+    padding: 30px 0;
+    text-align: center;
+    
+    /* width: 255px;
+    height: 255px; */
+}
+
+.aboutImg>img{
+    width: 90%;
+   
+}
+
+.aboutUs-3 {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.aboutUs-3-sub{
+    border: 1px solid;
+
+    width: 100%;
+}
+
+.aboutUs-3-sub-col {
+
+    border: 1px solid;
+    border-radius: 24px;
+    color: var(--h1-color-purple-font);
+    text-align: center;
+    width: 90%;
+    margin: 20px;
+    background-color: white;
+
+
+}
+
+/* Why Choose Us */
+.whyChooseUs {
+    padding: 50px 0;
+}
+
+.whyChooseUs p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #5e5e5e;
+    display: block;
+
+}
+
+.whyRow {
+    max-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.whyChooseUs-1 {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.why-1 {
+
+    text-align: center;
+
+}
+
+.why img {
+    max-width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 1px solid;
+
+
+
+
+}
+
+.why-1-sub {
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    font-weight: 1000;
+    text-align: center;
+    color: #562b80;
+}
+
+.why-btn-know-more {
+    font-size: 16px;
+    border: 1px solid #562b80;
+    border-radius: 16px;
+    padding: 10px 40px 10px 20px;
+    color: #562b80;
+    text-align: center;
+    text-decoration: none;
+
+    background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/arrow-blue.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-position: right 15px center;
+    /* vertical-align: middle; */
+    cursor: pointer;
+}
+
+
+/* our process */
+.process {
+    background-color: #562B80;
+    color: white;
+}
+
+.processDetail p {
+    color: white;
+
+}
+
+.processDetail li {
+    list-style: none;
+}
+
+.processDetail li::before {
+    content: url(./images/paper-plane.svg);
+}
+
+.processStep::after {
+    content: url(https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/arrow-down.svg);
+}
+
+.processList {
+    font-size: 30px;
+}
+
+.processList p {
+    font-size: 14px;
+
+}
+/* Placements */
+.container-six{
+    text-align: center;
+}
+.placements-row{
+    /* display: inline-block; */
+   
+    border: 1px solid;
+    padding: 30px;
+   
+}
+.placements-column{
+    border: 1px solid;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: inline-block;
+    /* width: 200px; */
+   
+ 
+    
+}
+
+.placements-column>img{
+    border: 1px solid;
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* enquiry form */
+.enquiryForm {
+    border: 1px solid;
+    padding: 65px 26px;
+    background-color: #361457;
+    max-width: 100%;
+
+}
+
+.e1,
+.e2 {
+    border: 1px solid;
+}
+
+.formImg {
+    /* width: 80%; */
+    padding-left: 50px;
+    max-width: 100%;
+
+
+    background-image: url(https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/arrow-bg1.svg);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.e2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.e2>p {
+    margin-bottom: 20px;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+
+}
+
+.f1,
+.f2,
+.f3,
+.f4,
+.f5 {
+    font-size: 16px;
+    background-image: linear-gradient(#c5bfcf, #5620b5);
+    padding: 6px 12px;
+    margin-bottom: 30px;
+}
+
+.f1::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.f2::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.f3::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.f4::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.f5::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.submitTemp {}
+
+.btn-submit {
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 10px 40px 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/arrow-blue.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
+    margin-bottom: 20px;
+
+}
+
+.formImg {
+    
+}
+
+/*frequently asked quentions  */
+
+.faq {}
+
+.accordion-button[aria-expanded="false"]::after {
+    background-image: url(./images/plus.svg);
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    background-image: url(./images/minus.svg);
+}
+
+.one,
+.two,
+.three {
+    /* border: 1px solid; */
+}
+
+.one {
+    text-align: center;
+}
+
+.one label {
+    font-size: 16px;
+}
+
+.one h1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--h1-margin-bottom);
+    text-transform: var(--h1-text-transform);
+    color: var(--h1-color-purple-font);
+
+}
+
+.two {
+    text-align: left;
+}
+
+
+.accordion {}
+
+.faqImg img {
+    width: 206px;
+    height: 233px;
+    margin-left: 25%;
+}
+
+
+/* footer  */
+
+footer {
+    background-image: url(./images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding-top: 75px;
+
+}
+
+.container {
+    width: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+    box-sizing: border-box;
+
+}
+
+.ftrTop {
+
+
+    margin-top: 10px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #ffffff4a;
+
+}
+
+.t1,
+.t2,
+.t3 {
+    /* border: 1px solid; */
+
+
+}
+
+.t2 {
+    border-bottom: 1px solid #ffffff4a;
+}
+
+.footLogo img {
+    /* max-width: 100%;  */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.ftrContact {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.fAddr {
+    background-image: url(./images/location.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 30px;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+.fPh {
+    background-image: url(./images/phone.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 30px;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+.fPh a {
+    color: white;
+    text-decoration: none;
+}
+
+.fEml {
+    background-image: url(./images/email.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 30px;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+.fEml a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.ftrBottom {
+    padding: 37px 0 25px;
+    /* border: 2px solid rgb(238, 238, 245); */
+    text-align: center;
+    color: white;
+
+}
+
+.b1,
+.b2,
+.b3 {
+    /* border: 1px solid; */
+
+}
+
+.footMenu {
+
+    /* border: 1px solid orange; */
+
+}
+
+.footMenu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: white;
+}
+
+.ftrBottom-Quicklinks,
+.ftrBottom-Courses,
+.ftrBottom-Socials {
+    font-size: 24px;
+    padding-bottom: 12px;
+    color: var(--li-color);
+
+}
+
+.ftrBottom-Socials-list,
+.ftrBottom-Quicklinks-list,
+.ftrBottom-Courses-list,
+ul li {
+    font-size: 16px;
+    font-family: var(--theme-font);
+    margin-bottom: 10px;
+}
+
+.ftrBottom-Socials-list,
+.ftrBottom-Quicklinks-list,
+.ftrBottom-Courses-list,
+ul li a {
+    color: var(--li-color);
+    text-decoration: none;
+
+}
+
+
+.copyright {
+    background-color: rgb(94, 10, 94);
+    /* position: fixed; */
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.wasp {
+
+    width: 35px;
+    height: 35px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 1000;
+
+
+
+
+}
+
+.wasp-circle {
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 100%;
+    border: 2px solid rgba(30, 30, 30, .4);
+    opacity: 1;
+    position: absolute;
+    background-color: transparent;
+    transition: all 0.5s;
+    animation: wasp-circle-anim 3s infinite ease-in-out;
+    transform-origin: 50% 50%;
+
+}
+
+
+@keyframes wasp-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.5) skew(1deg);
+        -webkit-opacity: .1;
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        -webkit-opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: .1;
+    }
+
+
+
+}
+
+.wasp-circle-fill {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgb(160, 160, 160);
+    position: absolute;
+    border: 2px solid #ffffff8a;
+    opacity: 1;
+    animation: wasp-circle-fill-anim 2.3s infinite ease-in-out;
+    box-sizing: border-box;
+}
+
+@keyframes wasp-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        opacity: 0.2;
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: 0.2;
+    }
+
+    100% {
+        -webkit-transform: rotate(.7) scale(1) skew(1deg);
+        opacity: 0.2;
+    }
+
+}
+
+.wasp-icon {
+    transition: all 0.5s;
+    max-width: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+
+/* ---------------------------------------------------- */
+
+/* 
+@media (min-width:512px) {
+
+    body {
+        background-color: brown;
+    }
+
+    .navbar {
+
+
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        flex-direction: column;
+        background-color: rgb(64, 27, 101);
+
+        align-items: center;
+        background-image: linear-gradient(45deg, rgb(41, 4, 41), rgb(224, 130, 224));
+
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .futura {
+        width: 50%;
+
+    }
+
+    .futura:hover {
+        box-shadow: 5px 5px 5px 12px white;
+    }
+
+    .list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        gap: 10px;
+        font-size: 75%;
+    }
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 50px;
+        background-color: rgb(86, 43, 128);
+
+        background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/bg01.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+
+
+    }
+
+    .section1 {
+        flex: 1;
+
+    }
+
+    .section h1 {
+        color: #feb60d;
+        
+        
+        width: 100%;
+        text-align: center;
+    }
+
+    .section1 h2 {
+        font-size: 100%;
+        line-height: 100%;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    .section2 {
+        flex: 1;
+
+    }
+
+    .section2>img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+
+    }
+
+
+    button {
+        background-color: rgb(53, 7, 53);
+        border-style: solid;
+        width: 100px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 10px;
+    } 
+
+
+}
+
+*/

@@ -1,0 +1,66 @@
+
+@media (min-width:512px) {
+
+    body {
+        background-color: var(--body-white-color);
+        color: black;
+
+    }
+/* Navbar */
+
+    .navbar1 {
+
+        align-items: center;
+        background-color: rgb(64, 27, 101);
+        padding: 20px;
+
+    }
+
+   /* Top Section */
+
+    .section1 h1 {
+
+        font-size: 35px;
+        margin-bottom: 20px;
+        color: #f4d908;
+        text-align: center;
+    }
+
+    .assured-placements>img {
+        width: 25%;
+        height: 25%;
+    }
+
+    
+
+    .btn1,
+    .btn2 {
+
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+.aboutUs{
+    /* padding: 5rem 4rem; */
+    margin:0px 92px;
+    display: block;
+    
+}
+    /* Footer */
+
+    .ftrBottom-Courses-list {
+        column-count: 3;
+        column-width: auto;
+    }
+
+    .ftrBottom-Quicklinks-list {
+        column-count: 2;
+        column-width: auto;
+    }
+
+
+
+}
