@@ -1,4 +1,5 @@
 @media (min-width:800px) {
+
     body {
         background-color: var(--body-white-color);
         color: black;
@@ -20,6 +21,10 @@
         justify-content: end;
     }
 
+    .placed-students>img {
+        width: 10%;
+    }
+
     .topSection {
         display: flex;
         justify-content: space-between;
@@ -30,16 +35,28 @@
 
     .section1 {
         flex: 1;
+
     }
 
     .section1 h1 {
         font-size: 70px;
+        text-align: start;
+    }
+
+    .section1 h2 {
+        text-align: start;
     }
 
     .btn-container {
 
-        justify-content: left;
+        justify-content: start;
 
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 20px;
+        font-weight: bold;
     }
 
 
@@ -57,20 +74,50 @@
     .assured-placements>img {
         width: 25%;
         height: 25%;
-
+        left: 15rem;
+        bottom: 5rem;
     }
 
-    .btn1,
-    .btn2 {
 
-        font-size: 20px;
-        font-weight: bold;
-        padding: 30px 10px;
-    }
+
+
 
     /* Our Courses */
 
+
+    .section-two-container {}
+
+    .section-2p {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .tabContent {
+        margin-left: 70px;
+        margin-right: 70px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* border: 1px solid; */
+    }
+
+
+
+    .tab-column {
+        /* display: inline-block; */
+        text-align: center;
+        width: 25%;
+
+        /* object-fit: contain; */
+
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
     .courseCover {
+
+        /* border: 1px solid; */
         padding: 10px 10px;
         margin-bottom: 20px;
         min-height: 160px;
@@ -85,54 +132,339 @@
 
     }
 
+    .courseHead {}
+
+
+
     /* about us */
     .aboutUs {
+        margin: 0px;
         display: flex;
-        justify-content: center;
-        padding: 2rem 4rem;
+        flex-wrap: wrap;
     }
 
-    .aboutUs-1,
-    .aboutUs-2,
+    .aboutUs-1 {
+        flex: 1;
+        text-align: start;
+        padding: 30px;
+
+    }
+
+    .aboutUs-2 {
+        flex: 1;
+        /* margin: 0px;
+        padding: 0px; */
+
+    }
+
+    .aboutImg {
+        padding: 0px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+
+    }
+
     .aboutUs-3 {
         flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 0px;
+        padding: 0px;
+        height: fit-content;
+        margin-top: 20%;
+        /* top: 4rem; */
+
     }
 
-    /* footer */
+    .aboutUs-3-sub-col {
 
-    .fEml,
-    .fPh,
-    .fAddr {
-        background-position: top left;
-        padding: 0 0 0 45px;
-        margin-bottom: 20px;
-        text-align: start;
+
+        width: 130px;
+        height: 80px;
+        text-align: left;
+        padding: 10px;
+
     }
 
-    .t2 {
-        border-bottom: none;
+    .aboutUs-3-sub-col>h2 {
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
     }
 
-    .ftrBottom-Quicklinks,
-    .ftrBottom-Courses,
-    .ftrBottom-Socials {
-        text-align: start;
+    .aboutUs-3-sub-col>p {
+        font-size: 10px;
+        color: black;
+        margin: 0px;
+        padding: 0px;
     }
 
-    .ftrBottom-Courses-list {
-        column-count: 3;
-        column-width: auto;
-        text-align: start;
-    }
 
-    .ftrBottom-Quicklinks-list {
-        column-count: 2;
-        column-width: auto;
-        text-align: start;
-    }
+/* why choose us */
 
-    .ftrBottom-Socials-list {
-        text-align: start;
-        /* padding-bottom:10px; */
-    }
+.whyRow {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.whyChooseUs-1 {
+    flex: 1;
+    margin-right: 50px;
+
+}
+
+.whyChooseUs-2 {
+    flex: 1;
+    margin-right: 50px;
+
+}
+
+.whyChooseUs-3 {
+    flex: 1;
+    margin-right: 50px;
+
+}
+
+
+/* Our Process */
+
+.container-five {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+
+.process-1 {
+    flex: 1;
+    text-align: start;
+}
+
+.pLabel {
+    padding-bottom: 10px;
+}
+
+.pH2 {
+    padding-bottom: 30px;
+}
+
+.processDetail>p {
+    padding-bottom: 40px;
+}
+
+.process-2 {
+    flex: 1;
+}
+
+/* placed students */
+.plcdStudents-title {
+    flex: 1;
+    text-align: start;
+}
+
+.plcdStudents-ptag {
+    flex: 2;
+    text-align: start;
+}
+
+/* contact */
+.container-contact {
+    position: relative;
+    background-position: left top;
+    background-size: cover;
+    margin: 133px 50px;
+    border-radius: 24px;
+    padding: 35px 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-section {
+
+    flex: 2;
+
+
+    /* padding: 35px 70px; */
+
+
+}
+
+.contact-section-one {
+
+    text-align: left;
+}
+
+.contact-section-two {
+    flex: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+.contact-section-two>img {
+    width: 80%;
+}
+
+/* testimonials */
+
+.section-testimonials {
+
+    margin: 0px 60px;
+}
+
+.section-one-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+
+
+.section-one-sub-one {
+    flex: 2;
+}
+
+.section-one-sub-two {
+    flex: 1;
+    padding-top: 30px;
+}
+
+.section-two-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-two-sub {
+    flex: 1;
+}
+
+
+/* <!-- enquiry form --> */
+.e2-title {
+    text-align: start;
+}
+
+.e1 {
+    flex: 1;
+
+}
+
+.e2 {
+    flex: 2;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.contactForm-1 {
+    flex: 1;
+    padding: 10px 5px;
+}
+
+.contactForm-2 {
+    flex: 1;
+    padding: 10px 5px;
+}
+
+
+
+
+/* footer */
+
+.container-footer {
+    margin: 0;
+}
+
+.ftrTop {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+}
+
+.t1 {
+    padding-top: 20px;
+    flex: 1;
+    align-items: start;
+    /* border: 1px solid; */
+}
+
+.t2 {
+    padding-top: 10px;
+    flex: 1;
+    border-bottom: none;
+    /* border: 1px solid; */
+}
+
+.t3 {
+    padding-top: 10px;
+    flex: 1;
+    /* border: 1px solid; */
+}
+
+.fEml,
+.fPh,
+.fAddr {
+    background-position: top left;
+    padding: 0 0 0 45px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+
+
+.ftrBottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    gap: 1rem;
+}
+
+
+.footMenu-b1 {
+    flex: 1;
+}
+
+.footMenu-b2 {
+    flex: 3;
+}
+
+.footMenu-b3 {
+    flex: 1;
+}
+
+
+.ftrBottom-Quicklinks,
+.ftrBottom-Courses,
+.ftrBottom-Socials {
+    text-align: start;
+}
+
+.ftrBottom-Courses-list {
+    /* column-count: 3;
+        column-width: auto; */
+    text-align: start;
+}
+
+.ftrBottom-Quicklinks-list {
+    /* column-count: 2;
+        column-width: auto; */
+    text-align: start;
+}
+
+.ftrBottom-Socials-list {
+    text-align: start;
+    /* padding-bottom:10px; */
+}
 }

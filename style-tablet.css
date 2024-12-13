@@ -49,6 +49,20 @@
     display: block;
     
 }
+
+/* placed students */
+.plcdStudents-title{
+    flex:1;
+}
+.plcdStudents-ptag{
+ flex:2;
+}
+
+.plcdStudents-Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
     /* Footer */
 
     .ftrBottom-Courses-list {
